@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "0ecac59f-5d83-4a07-a83c-d6e21972127b",
+		"name": "cassandra-tutorials",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create-tutorial",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\":\"mytutorial1\",\r\n\"description\":\"mytutorial1\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tutorials",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tutorials"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch-tutorial",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/tutorials/28428d34-0d28-4291-8734-af87a8bf969c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tutorials",
+						"28428d34-0d28-4291-8734-af87a8bf969c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch-tutorials",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tutorials",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tutorials"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-tutorial",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\":\"mytutorial11234567\",\r\n\"description\":\"mytutorial1\",\r\n \"published\": true\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tutorials/28428d34-0d28-4291-8734-af87a8bf969c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tutorials",
+						"28428d34-0d28-4291-8734-af87a8bf969c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-tutorial",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tutorials/28428d34-0d28-4291-8734-af87a8bf969c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tutorials",
+						"28428d34-0d28-4291-8734-af87a8bf969c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
